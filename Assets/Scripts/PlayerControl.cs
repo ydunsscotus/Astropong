@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerControl : MonoBehaviour
 {
+    public AudioSource audioPlayer;
 
     public KeyCode moveUp = KeyCode.W;
     public KeyCode moveDown = KeyCode.S;
@@ -44,5 +45,13 @@ public class PlayerControl : MonoBehaviour
             pos.y = -boundY;
         }
         transform.position = pos;
+    }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Ball")
+        {
+            audioPlayer.Play();
+        }
     }
 }
