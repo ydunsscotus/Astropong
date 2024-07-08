@@ -4,54 +4,63 @@ using UnityEngine;
 
 public class BallControl : MonoBehaviour
 {
-    private Rigidbody2D rb2d;
+    private Rigidbody2D rb;
+    public float ForceMultiplier = 10f;
+    public float maxSpeed = 20f;
+
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>(); 
-        Invoke("GoBall", 2); 
+        rb = GetComponent<Rigidbody2D>(); 
+        Invoke("BallStart", 2); 
     }
-   void GoBall()
-{
-    float rand = Random.Range(0, 2);
-    Vector2 force = Vector2.zero;
 
-    if (rand < 1)
-    { 
-        force = new Vector2(50, -15); 
-    }
-    else
+    void FixedUpdate()
     {
-        force = new Vector2(-50, -15);
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxSpeed);
     }
 
-    force *= 10.0f;
+    void BallStart()
+    {
+        float rand = Random.Range(0, 2);
+        Vector2 force = Vector2.zero;
 
-    rb2d.AddForce(force);
-}
+        if (rand < 1)
+        { 
+            force = new Vector2(50, -15); 
+        }
+        else
+        {
+            force = new Vector2(-50, -15);
+        }
 
+        force *= ForceMultiplier;
+
+        rb.AddForce(force);
+    }
 
     void ResetBall() 
     {
-        rb2d.velocity = Vector2.zero;
+        rb.velocity = Vector2.zero;
         transform.position = Vector2.zero;
     }
 
     void RestartGame()
     {
         ResetBall();
-        Invoke("GoBall", 1);
+        Invoke("BallStart", 1);
     }
 
     void OnCollisionEnter2D(Collision2D coll)
     {
         if (coll.collider.CompareTag("Player"))
         {
-            Vector2 vel;
-            vel.x = rb2d.velocity.x + (coll.collider.attachedRigidbody.velocity.y / 4);
-            vel.y = (rb2d.velocity.y / 3) + (coll.collider.attachedRigidbody.velocity.y / 2); 
-            rb2d.velocity = vel;
+            Vector2 vel = rb.velocity;
+            Vector2 playerVel = coll.collider.attachedRigidbody.velocity;
 
+            vel.x = Mathf.Lerp(vel.x, vel.x + (playerVel.x / 4), 0.5f);
+            vel.y = Mathf.Lerp(vel.y, (vel.y / 3) + (playerVel.y / 2), 0.5f);
+
+            rb.velocity = vel;
         }
     }
-
 }

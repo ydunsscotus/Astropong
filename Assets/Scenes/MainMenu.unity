@@ -1056,7 +1056,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012089, y: 321}
+  m_AnchoredPosition: {x: 0.00012089, y: 364}
   m_SizeDelta: {x: 1118.56, y: 125.986}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1185614064
@@ -1088,8 +1088,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4292345842
+  m_fontColor: {r: 0.95071673, g: 1, b: 0.8443396, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1106,15 +1106,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 129.54
-  m_fontSizeBase: 129.54
+  m_fontSize: 145
+  m_fontSizeBase: 145
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 33
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -1516,8 +1516,7 @@ GameObject:
   - component: {fileID: 1478074172}
   - component: {fileID: 1478074171}
   m_Layer: 0
-  m_Name: "Background 3_\xEE\xAB\xA1\u0393\xE1\xAA\xA1\xE1\u2229 \xAB\xED\xBD\xE1\xDF\u0393\u221E
-    1"
+  m_Name: land
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
