@@ -1,4 +1,7 @@
 # Astropong
+![MainMenu](https://github.com/ydunsscotus/Astropong/assets/113657705/916b8203-9efd-4375-91c0-de896754dcdb)
+![AI](https://github.com/ydunsscotus/Astropong/assets/113657705/34f8bd27-3ea6-4658-8391-c7a343c38878)
+![VS Player](https://github.com/ydunsscotus/Astropong/assets/113657705/45f081d9-7531-41d0-ac3a-135672311855)
 
 **Astropong** is a space-themed pong arcade game that offers two engaging modes: Single Player and Versus Player. In this game, players can enjoy the classic pong experience with a cosmic twist.
 
@@ -29,5 +32,5 @@ Astropong is a pong arcade game set in the vastness of space. The game features 
 
 2. Download the game:
     ```sh
-    # Instructions for running the game
+    
     ```
