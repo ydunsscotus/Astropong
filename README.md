@@ -1,12 +1,6 @@
 # Astropong
-### Main Menu
-<img src="https://github.com/ydunsscotus/Astropong/assets/113657705/916b8203-9efd-4375-91c0-de896754dcdb" width="500">
+<img src="https://github.com/ydunsscotus/Astropong/assets/113657705/57d76c7c-a5ef-4ae5-990c-f5a8b8eaf1f5" alt="Astropong" width="300"/>
 
-### VS AI Mode
-<img src="https://github.com/ydunsscotus/Astropong/assets/113657705/34f8bd27-3ea6-4658-8391-c7a343c38878" width="500">
-
-### VS Player Mode
-<img src="https://github.com/ydunsscotus/Astropong/assets/113657705/45f081d9-7531-41d0-ac3a-135672311855" width="500">
 
 **Astropong** is a space-themed pong arcade game that offers two engaging modes: Single Player and Versus Player. In this game, players can enjoy the classic pong experience with a cosmic twist.
 
