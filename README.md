@@ -26,7 +26,7 @@ Astropong is a pong arcade game set in the vastness of space. The game features 
 
 1. Clone the repository:
     ```sh
-    git clone https://github.com/yourusername/astropong.git
+    https://github.com/ydunsscotus/Astropong
     ```
     if you want to play the game, you can download the latest version of the game directly from the following link:
    [Download Astropong](https://1drv.ms/u/s!AoQfHXVNUJTksMhosvo2ufvaG3uV_g?e=mTNqy7)
